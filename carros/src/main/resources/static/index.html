@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carros App</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<header>
+    <h1>Carros App</h1>
+</header>
+<main>
+    <h1>Filtro de Carros por Cor</h1>
+
+    <label for="corSelect">Selecione a cor:</label>
+    <select id="corSelect">
+        <option value="">Todas as cores</option>
+        <!-- Opções de cores serão carregadas dinamicamente via JavaScript -->
+    </select>
+
+    <button onclick="filtrarCarros()">Filtrar</button>
+
+    <div id="carrosList">
+        <!-- Lista de carros será carregada dinamicamente via JavaScript -->
+    </div>
+
+    <!-- Formulário para adicionar um novo carro -->
+    <form id="carForm">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required><br><br>
+
+        <label for="modelo">Modelo:</label>
+        <input type="text" id="modelo" name="modelo" required><br><br>
+
+        <label for="marca">Marca:</label>
+        <input type="text" id="marca" name="marca" required><br><br>
+
+        <label for="cor">Cor:</label>
+        <input type="text" id="cor" name="cor" required><br><br>
+
+        <button type="submit">Adicionar Carro</button>
+    </form>
+
+    <!-- Lista de carros -->
+    <section id="carList">
+        <!-- Aqui serão exibidos os carros -->
+    </section>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
